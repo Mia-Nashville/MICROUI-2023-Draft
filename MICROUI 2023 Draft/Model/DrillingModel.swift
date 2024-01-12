@@ -11,7 +11,6 @@ import FirebaseFirestoreSwift
 
 struct DrillingModel: Identifiable, Codable, Hashable {
     @DocumentID var id: String?
-    var pileNumber: String = ""
     var drilldate: Date
     var pileType: String
     var casingStickup: String
@@ -26,7 +25,7 @@ struct DrillingModel: Identifiable, Codable, Hashable {
     var soilProfile2: String
     var soilProfile3: String
     var soilProfile4: String
-    var pileID: Int
+    var pileID: String?
     var imageUrlString: String?
     
     var projectsID: ProjectModel?

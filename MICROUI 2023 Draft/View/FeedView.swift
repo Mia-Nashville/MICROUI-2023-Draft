@@ -17,7 +17,7 @@ struct FeedView: View {
                 LazyVStack(spacing: 20) {
                     ForEach(viewModel.projectVM, id: \.self) {projects in
                         NavigationLink(destination: {
-                            
+                            ProjectDetailCard(projects: projects)
                         }, label: {
                             FeedCell(projects: projects)
                         })

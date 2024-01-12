@@ -76,12 +76,16 @@ struct GroutLogSetup: View {
                 
                 HStack(spacing: 20) {
                     Toggle("Hole is clean and depth was verified prior to grouting", isOn: $tremie)
+                        .lineLimit(2)
+                        .font(.subheadline)
                     Text(tremie ? "YES" : "NO")
                 }
                 .padding(.horizontal, 10)
                 
                 HStack(spacing: 20) {
                     Toggle("Pile was plunged for full length casing", isOn: $plunging)
+                        .lineLimit(2)
+                        .font(.subheadline)
                     Text(plunging ? "YES" : "NO")
                         .labelsHidden()
                 }

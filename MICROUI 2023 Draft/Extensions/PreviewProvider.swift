@@ -25,4 +25,7 @@ class DeveloperPreview {
     
     let mockSafety = InsiteSafetyModel(title: "LNOS", description: "Microfine and Fracture grouting for LA tunnel", controlMeasure: "Tieback suits", controlMeasure2: "Proper PPE", jobphoto: "image 1")
     
-    let mockThreads = ProjectThreadModel(ownerUid: "1234", caption: "This is a thread", timestamp: Timestamp(), likes: 1)}
+    let mockThreads = ProjectThreadModel(ownerUid: "1234", caption: "This is a thread", timestamp: Timestamp(), likes: 1)
+    
+    let mockDrilling = DrillingModel(drilldate: Date(), pileType: "Type B", casingStickup: "1 ft", actualBondLength: "30 ft", totaldrilldepth: 50, drillersname: "Chris Taylor", soilDepth1: 10, soilDepth2: 20, soilDepth3: 30, soilDepth4: 40, soilProfile1: "Fill", soilProfile2: "Clay", soilProfile3: "Sandy-Silt", soilProfile4: "Rock", pileID: "Pile 10")
+}

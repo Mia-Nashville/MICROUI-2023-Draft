@@ -71,6 +71,12 @@
 		E4EEB53A2B4F5999001B0238 /* DailyReportSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EEB5392B4F5999001B0238 /* DailyReportSetup.swift */; };
 		E4EEB53C2B4F59AD001B0238 /* DailySiteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EEB53B2B4F59AD001B0238 /* DailySiteModel.swift */; };
 		E4EEB53E2B4F5A53001B0238 /* DailyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EEB53D2B4F5A53001B0238 /* DailyViewModel.swift */; };
+		E4F5FE372B519ECC00D05063 /* ProjectDetailCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F5FE362B519ECC00D05063 /* ProjectDetailCard.swift */; };
+		E4F5FE392B51A34200D05063 /* ProjectMenuRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F5FE382B51A34200D05063 /* ProjectMenuRow.swift */; };
+		E4F5FE3B2B51A99600D05063 /* DrillListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F5FE3A2B51A99600D05063 /* DrillListView.swift */; };
+		E4F5FE3D2B51AEAF00D05063 /* DrillListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F5FE3C2B51AEAF00D05063 /* DrillListCell.swift */; };
+		E4F5FE3F2B51B03500D05063 /* TabModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F5FE3E2B51B03500D05063 /* TabModifiers.swift */; };
+		E4F5FE412B51B15E00D05063 /* GroutListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F5FE402B51B15E00D05063 /* GroutListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,6 +160,12 @@
 		E4EEB5392B4F5999001B0238 /* DailyReportSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportSetup.swift; sourceTree = "<group>"; };
 		E4EEB53B2B4F59AD001B0238 /* DailySiteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailySiteModel.swift; sourceTree = "<group>"; };
 		E4EEB53D2B4F5A53001B0238 /* DailyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyViewModel.swift; sourceTree = "<group>"; };
+		E4F5FE362B519ECC00D05063 /* ProjectDetailCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailCard.swift; sourceTree = "<group>"; };
+		E4F5FE382B51A34200D05063 /* ProjectMenuRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectMenuRow.swift; sourceTree = "<group>"; };
+		E4F5FE3A2B51A99600D05063 /* DrillListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrillListView.swift; sourceTree = "<group>"; };
+		E4F5FE3C2B51AEAF00D05063 /* DrillListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrillListCell.swift; sourceTree = "<group>"; };
+		E4F5FE3E2B51B03500D05063 /* TabModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabModifiers.swift; sourceTree = "<group>"; };
+		E4F5FE402B51B15E00D05063 /* GroutListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroutListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -292,6 +304,7 @@
 				E4EEB5032B4F3BD2001B0238 /* PreviewProvider.swift */,
 				E4EEB5332B4F5621001B0238 /* SoilCondition.swift */,
 				E4EEB51D2B4F4448001B0238 /* Timestamp.swift */,
+				E4F5FE3E2B51B03500D05063 /* TabModifiers.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -340,8 +353,11 @@
 		E4EEB4D52B4F33F4001B0238 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				E4F5FE3C2B51AEAF00D05063 /* DrillListCell.swift */,
 				E4EEB4E12B4F3662001B0238 /* FeedCell.swift */,
+				E4F5FE402B51B15E00D05063 /* GroutListCell.swift */,
 				E4EEB4E32B4F3674001B0238 /* ProjectCell.swift */,
+				E4F5FE362B519ECC00D05063 /* ProjectDetailCard.swift */,
 				E4EEB4E52B4F367B001B0238 /* ThreadCell.swift */,
 			);
 			path = Cells;
@@ -354,6 +370,7 @@
 				E4EEB4F52B4F38B5001B0238 /* CustomTextFieldButton.swift */,
 				E4EEB4F32B4F385F001B0238 /* GradientIconButton.swift */,
 				E4EEB4EF2B4F37EC001B0238 /* ImagePicker.swift */,
+				E4F5FE382B51A34200D05063 /* ProjectMenuRow.swift */,
 				E4EEB4ED2B4F37B7001B0238 /* TextEditorButton.swift */,
 				E4EEB4F12B4F3834001B0238 /* ThreadsTextFieldModifier.swift */,
 			);
@@ -368,6 +385,7 @@
 				E4EEB4DF2B4F3642001B0238 /* FeedView.swift */,
 				E4EEB5152B4F3F56001B0238 /* ProfileContentView.swift */,
 				E4EEB5232B4F4770001B0238 /* ThreadListView.swift */,
+				E4F5FE3A2B51A99600D05063 /* DrillListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -531,6 +549,8 @@
 				E4EEB4F82B4F3944001B0238 /* UserService.swift in Sources */,
 				E4EEB4E22B4F3662001B0238 /* FeedCell.swift in Sources */,
 				E4EEB52E2B4F4E1D001B0238 /* GroutLogSetup.swift in Sources */,
+				E4F5FE3F2B51B03500D05063 /* TabModifiers.swift in Sources */,
+				E4F5FE372B519ECC00D05063 /* ProjectDetailCard.swift in Sources */,
 				E4EEB5142B4F3EC2001B0238 /* CurrentUserProfileView.swift in Sources */,
 				E4EEB5022B4F3BAD001B0238 /* SafetyMainView.swift in Sources */,
 				E4EEB53C2B4F59AD001B0238 /* DailySiteModel.swift in Sources */,
@@ -543,6 +563,7 @@
 				E4EEB5002B4F3B52001B0238 /* ResetPasswordView.swift in Sources */,
 				E4EEB52C2B4F4CDF001B0238 /* GroutViewModel.swift in Sources */,
 				E4EEB4FA2B4F39CD001B0238 /* ImageUploaderService.swift in Sources */,
+				E4F5FE3D2B51AEAF00D05063 /* DrillListCell.swift in Sources */,
 				E4EEB50C2B4F3D7F001B0238 /* ProfileHeaderView.swift in Sources */,
 				E4EEB5242B4F4770001B0238 /* ThreadListView.swift in Sources */,
 				E4EEB4EE2B4F37B7001B0238 /* TextEditorButton.swift in Sources */,
@@ -560,9 +581,11 @@
 				E4EEB5042B4F3BD2001B0238 /* PreviewProvider.swift in Sources */,
 				E4EEB51E2B4F4448001B0238 /* Timestamp.swift in Sources */,
 				E4EEB5162B4F3F56001B0238 /* ProfileContentView.swift in Sources */,
+				E4F5FE3B2B51A99600D05063 /* DrillListView.swift in Sources */,
 				E4EEB5202B4F44C9001B0238 /* ProjectThreadViewModel.swift in Sources */,
 				E4EEB51C2B4F437E001B0238 /* ProjectThreadModel.swift in Sources */,
 				E4EEB4EA2B4F36EA001B0238 /* AuthService.swift in Sources */,
+				E4F5FE392B51A34200D05063 /* ProjectMenuRow.swift in Sources */,
 				E4EEB4E42B4F3674001B0238 /* ProjectCell.swift in Sources */,
 				E4EEB4DC2B4F352E001B0238 /* UserModel.swift in Sources */,
 				E4EEB4DE2B4F3609001B0238 /* InsiteSafetyModel.swift in Sources */,
@@ -578,6 +601,7 @@
 				E4EEB5322B4F543E001B0238 /* DrillingViewModel.swift in Sources */,
 				E4EEB4EC2B4F3797001B0238 /* Constants.swift in Sources */,
 				E4EEB4FC2B4F3A31001B0238 /* RegistrationView.swift in Sources */,
+				E4F5FE412B51B15E00D05063 /* GroutListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

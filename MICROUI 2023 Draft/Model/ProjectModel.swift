@@ -18,7 +18,7 @@ struct ProjectModel: Identifiable, Codable, Hashable {
     var projectManager: String
     var projectNumber: String
     var projectName: String
-    var projectDescription: String
+    var projectDescription: String?
     var superintendent: String
     let ownerUid: String
     let timeStamp: Timestamp

@@ -26,7 +26,7 @@ final class DrillingViewModel: ObservableObject {
         guard let image = image else { return }
         
         ProjectImageUpload.uploadImage(image: image, type: .drilling) { imageUrl in
-            let storedData: [String: Any] = ["pileID": pileID,
+            let storedData: [String: Any] = ["pileID": "Pile \(pileID)",
                                              "drillDate" : drillDate,
                                              "pileType": pileType,
                                              "casingStickup": casingStickup,
