@@ -14,7 +14,7 @@ final class ProjectViewModel: ObservableObject {
     @Published var projectVM = [ProjectModel]()
     
     init() {
-        fetchAllProjects()
+        fetchProjectData()
     }
     
     func createMainProjects(clientName: String, location: String, projectManager: String, projectNumber: String, projectName: String, projectDescription: String, superintendent: String, image: UIImage? ) {
@@ -27,15 +27,15 @@ final class ProjectViewModel: ObservableObject {
             let storedData: [String: Any] = ["clientName": clientName, "location": location, "projectManager": projectManager, "projectNumber": projectNumber, "projectName": projectName, "projectDescription": projectDescription, "superintendent": superintendent, "uid": documentID, "timeStamp": Timestamp(), "ownerUid": user.uid, "imageUrlString": imageUrl]
             
             COLLECTION_PROJECTS.document(documentID).setData(storedData) { _ in
-            print("Successfully uploaded Project Data")}
+                print("Successfully uploaded Project Data")}
         }
-        }
+    }
     
     func fetchAllProjects() {
         COLLECTION_PROJECTS.getDocuments { (querySnapshot, _) in
             guard let documents = querySnapshot?.documents else {
                 print("No documents found")
-             return }
+                return }
             self.projectVM = documents.compactMap({ (queryDocumentSnapshot) -> ProjectModel? in
                 return try? queryDocumentSnapshot.data(as: ProjectModel.self)
             })
@@ -43,8 +43,8 @@ final class ProjectViewModel: ObservableObject {
     }
     
     func fetchProjectData() {
-      // COLLECTION_PROJECTS.getDocuments { querySnapshot, _ in
-    //    Firestore.firestore().collection("Micropile Projects 2024").getDocuments { querySnapshot, _ in
+        // COLLECTION_PROJECTS.getDocuments { querySnapshot, _ in
+        //    Firestore.firestore().collection("Micropile Projects 2024").getDocuments { querySnapshot, _ in
         COLLECTION_PROJECTS.getDocuments { (querySnapshot, _) in
             guard let documents = querySnapshot?.documents else { return }
             self.projectVM = documents.map({ queryDocumentSnapshot -> ProjectModel in
@@ -64,5 +64,5 @@ final class ProjectViewModel: ObservableObject {
             })
         }
     }
-    }
+}
 

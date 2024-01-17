@@ -16,7 +16,8 @@ final class DailyViewModel: ObservableObject {
     init(projects: ProjectModel) {
         self.projects = projects
         
-        fetchDailyReport()
+        fetchAllDailyReport()
+     //   fetchDailyReport()
     }
     
     func createDailyReport(reportDate: Date, siteActivity: String, materialDelivered: String, delaysEncountered: String, image: UIImage?, conversation: String) {
@@ -34,10 +35,21 @@ final class DailyViewModel: ObservableObject {
         }
     }
     
+    func fetchAllDailyReport() {
+        guard let projectID = projects.id else { return }
+        
+        COLLECTION_PROJECTS.document(projectID).collection("dailyReport").getDocuments { (querySnapshot, _) in
+            guard let documents = querySnapshot?.documents else { return }
+            self.dailyVM = documents.compactMap({ try? $0.data(as: DailySiteModel.self)
+            })
+        }
+    }
+    
     func fetchDailyReport() {
         guard let user = Auth.auth().currentUser else { return }
+        guard let projectID = projects.id else { return }
         
-        Firestore.firestore().collection("dailyReport").getDocuments { (querySnapshot, _) in
+        COLLECTION_PROJECTS.document(projectID).collection("dailyReport").getDocuments { (querySnapshot, _) in
             guard let documents = querySnapshot?.documents else { return }
             self.dailyVM = documents.map({ queryDocumentSnapshot -> DailySiteModel in
                 let data = queryDocumentSnapshot.data()

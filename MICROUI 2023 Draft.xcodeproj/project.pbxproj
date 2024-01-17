@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E480B2E72B574E19006E5AFB /* DailyReportCollectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E480B2E62B574E19006E5AFB /* DailyReportCollectView.swift */; };
 		E4EEB4952B4F30B2001B0238 /* MICROUI_2023_DraftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EEB4942B4F30B2001B0238 /* MICROUI_2023_DraftApp.swift */; };
 		E4EEB4972B4F30B2001B0238 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EEB4962B4F30B2001B0238 /* ContentView.swift */; };
 		E4EEB4992B4F30B3001B0238 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4EEB4982B4F30B3001B0238 /* Assets.xcassets */; };
@@ -97,6 +98,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E480B2E62B574E19006E5AFB /* DailyReportCollectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportCollectView.swift; sourceTree = "<group>"; };
 		E4EEB4912B4F30B2001B0238 /* MICROUI 2023 Draft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MICROUI 2023 Draft.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4EEB4942B4F30B2001B0238 /* MICROUI_2023_DraftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MICROUI_2023_DraftApp.swift; sourceTree = "<group>"; };
 		E4EEB4962B4F30B2001B0238 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -385,6 +387,7 @@
 				E4EEB4DF2B4F3642001B0238 /* FeedView.swift */,
 				E4EEB5152B4F3F56001B0238 /* ProfileContentView.swift */,
 				E4EEB5232B4F4770001B0238 /* ThreadListView.swift */,
+				E480B2E62B574E19006E5AFB /* DailyReportCollectView.swift */,
 				E4F5FE3A2B51A99600D05063 /* DrillListView.swift */,
 			);
 			path = View;
@@ -570,6 +573,7 @@
 				E4EEB5262B4F47B0001B0238 /* MainTabView.swift in Sources */,
 				E4EEB5122B4F3E3A001B0238 /* EditProfileViewModel.swift in Sources */,
 				E4EEB4F42B4F385F001B0238 /* GradientIconButton.swift in Sources */,
+				E480B2E72B574E19006E5AFB /* DailyReportCollectView.swift in Sources */,
 				E4EEB5102B4F3DE5001B0238 /* ContentViewModel.swift in Sources */,
 				E4EEB5062B4F3C3D001B0238 /* BasicSafetyImageRow.swift in Sources */,
 				E4EEB5382B4F5700001B0238 /* PileArrayModel.swift in Sources */,

@@ -21,13 +21,13 @@ struct ProjectDetailCard: View {
                         KFImage(URL(string: imageUrlString))
                             .resizable()
                             .aspectRatio(contentMode: .fill)
-                            .frame(width: 400, height: 345)
+                            .frame(width: 400, height: 370)
                             .shadow(radius: 5)
                     } else {
                         Image(systemName: "questionmark.square.fill")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
-                            .frame(width: 400, height: 345)
+                            .frame(width: 400, height: 370)
                             .shadow(radius: 5)
                     }
                     VStack(alignment: .leading, spacing: 5) {
@@ -92,7 +92,7 @@ struct ProjectDetailCard: View {
                             .padding(.vertical, 5)
                             
                             NavigationLink(destination: {
-                                
+                                DailyReportCollectView(viewmodel: DailyViewModel(projects: projects))
                             }, label: {
                                 ProjectMenuRow(title: "Daily Site Report", leftIcon: "doc.badge.plus")
                             })
@@ -124,5 +124,11 @@ struct ProjectDetailCard: View {
             
             .ignoresSafeArea(.all, edges: .top)
         }
+    }
+}
+
+struct ProjectDetailCard_Preview: PreviewProvider {
+    static var previews: some View {
+        ProjectDetailCard(projects: devPreview.mockProjects)
     }
 }
